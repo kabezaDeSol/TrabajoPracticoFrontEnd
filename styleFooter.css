@@ -1,0 +1,40 @@
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contenedorPie{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.contenedorPie nav{
+    display: flex;
+    gap: 17px;
+    min-width: 200px;
+}
+.btnFooter{
+    padding: 5px 20px;
+    border-radius: 17px;
+    min-width: 200px;
+}
+.btnFooter:hover{
+    background-color: rgb(195, 195, 194);
+}
+@media screen and (max-width: 733px){
+    .contenedorPie{
+        justify-content: center;
+        gap: 50px;
+        font-size: 12px;
+    }
+    
+}
+@media screen and (max-width: 250px){
+    .gestionar{
+        font-size: 8px;
+    }
+}

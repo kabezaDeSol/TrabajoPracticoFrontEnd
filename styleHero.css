@@ -1,0 +1,77 @@
+:root {
+    --grisClaro: #efeced; 
+    --grisOscurito:#A6A7AB;
+}
+.clase-seccion-hero{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.divHero{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.divHero article{
+    position: relative;
+    object-fit: cover;
+    display: flex;
+    position: relative;
+}
+.articuloUno{
+    width: 590px;
+    height: 590px;
+    flex-direction: column;
+    justify-content: end;
+}
+.articuloUno h2{
+    font-size: clamp(1.5rem, 7vw, 3rem);
+}
+.articuloDos{
+    height: 590px;
+    width: 590px;
+    background-image: url('./solution-research-hero.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.divBotonesHero{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.btnProbar{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.btnComunicate{
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.btnProbar:hover{
+    background-color: var(--grisOscurito);
+}
+.btnComunicate:hover{
+    background-color: var(--grisOscurito);
+}
+@media screen and (max-width:476px){
+    .articuloUno{
+        width: 300px;
+        height:300px;
+    }
+    .articuloDos{
+        width: 300px;
+        height: 300px;
+
+    }
+    .articuloUno h2{
+    font-size: clamp(1rem, 5vw, 2rem);
+    }
+}

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    padding-top: 4em;
+    background-color: white;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    background-color: inherit;
+}
+
+.cabeza{
+    width: 100%;
+    max-width: 1200px;
+    height: 70px;
+    padding: 8px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 14px;
+}
+.cabeza div{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    flex-direction: row;
+}
+.cabeza div nav{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+
+}
+.botonera{
+    display: flex;
+    gap: 10px;
+}
+
+.btnPrueba{
+    padding:8px 22px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.btnHablar{
+    padding:8px 22px;
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+}
+.btnPrueba:hover{
+    background-color: gray;
+}
+.btnHablar:hover{
+    background-color: gray;
+}
+.switch{
+    display: none !important;
+}
+
+@media screen and (max-width:944px){
+    .botonera{
+        visibility: hidden;
+        display:none;
+        width: 0px;
+    }
+        .btnHablar{
+            font-size: 12px;
+            padding: 10px 5px;
+            margin-right: 10px;
+
+    }
+    body{
+        padding: 10px;
+    }
+}
+@media screen and (max-width:470px){
+    .btnPrueba{
+        visibility: hidden;
+        display:none;
+        width: 0px;
+    }
+    .btnHablar{
+        visibility: hidden;
+        display:none;
+        width: 0px;
+    }
+    .switch{
+        display:flex !important;
+        gap: 10px;
+        left: 0px;
+    }
+
+    body{
+        padding: 5px;
+    }
+    a{
+        font-size: 12px;
+    }
+}
